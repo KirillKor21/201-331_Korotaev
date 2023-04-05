@@ -37,9 +37,12 @@ int MainWindow::check_pin_code() {
 
 void MainWindow::show_pin_check_window() {
 
-    window_pin = new QWidget; //Создание виджета как окна для ввода пин кода
+    window_pin = new QWidget(); //Создание виджета как окна для ввода пин кода
+    window_pin->setGeometry(683,350,270,120);
+    //window_pin->setStyleSheet("display: table-cell;");
+
     //window_pin->setBaseSize(250,100);
-    window_pin->setFixedSize(250,100);
+    //window_pin->setFixedSize(250,100);
     QVBoxLayout *layout_pin = new QVBoxLayout;
 
 
@@ -276,12 +279,13 @@ void MainWindow::on_open_add_window_btn_clicked()
 {
     this->setEnabled(false);//Скрываем главное окно
 
-    add_data_window = new QWidget; //Создание виджета как окна для добавление данных
+    //Создание виджета как окна для добавление данных
+    add_data_window = new QWidget;
+    add_data_window->setGeometry(630,340,300,200);
 
     add_data_window->installEventFilter(this); //Устанавливаем отлавливание событий
 
-    add_data_window->setFixedSize(300,200);
-    //add_data_window->setStyleSheet(" height:25px; width:100px; ");
+    //add_data_window->setFixedSize(300,200);
 
     QVBoxLayout *layout_add_window = new QVBoxLayout;
 

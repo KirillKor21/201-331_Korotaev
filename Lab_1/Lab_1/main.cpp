@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     // Сравнение хэша
 
     qDebug() << current_hash_base64;
-    const QByteArray ref_hash_base64 = QByteArray("DXbWOZSMUnriKICsNDFQIBULCphktcwg+6be/p1F7rA=");
+    const QByteArray ref_hash_base64 = QByteArray("BuZHvPZyt5yvHW2zEajxXojRTQAhs26kxSui1TJP64k=");
     bool result_checksum = (current_hash_base64==ref_hash_base64);
 #else
     bool result_checksum = true;
