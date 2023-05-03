@@ -1,0 +1,27 @@
+﻿  Building 'passThrough' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\passThrough.inf
+  Stamping [Version] section with DriverVer=05/03/2023,21.42.30.625
+Z:\passThrough\passThrough.inf(8-8): warning 1324: [Version] section should specify PnpLockdown=1 to prevent external apps from modifying installed driver files.
+Z:\passThrough\passThrough.inf(74-74): warning 1205: Section [MiniFilter.DriverFiles] referenced from DelFiles and CopyFiles directive.
+  passThrough.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vcruntime.h(61,26): warning C4083: требуется ")"; обнаружен идентификатор "_VCRUNTIME_DISABLED_WARNINGS"
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\stdint.h(16,26): warning C4083: требуется ")"; обнаружен идентификатор "_VCRUNTIME_DISABLED_WARNINGS"
+  passThrough.vcxproj -> Z:\passThrough\x64\Debug\passThrough.sys
+  Done Adding Additional Store
+  Successfully signed: Z:\passThrough\x64\Debug\passThrough.sys
+  
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  Z:\passThrough\x64\Debug\passThrough\passthrough.cat
+  Done Adding Additional Store
+  Successfully signed: x64\Debug\passThrough\passthrough.cat
+  
